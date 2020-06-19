@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Ramen Order Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+  </head>
+  <body>
+      <h1>Ramen Order Form</h1>
+      <h2>Place your order & it'll be ready in 20 minutes!</h2>
+      <h4>Contact & account details</h4>
+      <form method="GET" action="/thanks.php">
+          <label for="name" id="name" name="name">Full Name</label>
+          <input type="text" name="name" id="name"><br>
+          <label for="email" id="email" name="email">Email</label>
+          <input type="text" name="email" id="email"><br>
+          <label for="pword" id="pword" name="password">Enter Password</label>
+          <input type="password" name="password" id="pword" minlength="8"><br>
+          <label for="phone" id="phone" name="phone">Cell #</label>
+          <input type="number" name="phone" id="phone" title="Phone number"><br>
+          <span>----------------------------</span><br>
+          <h4>Order details</h4>
+          <label for="order" id="orders" name="orders">How many orders?</label>
+          <input type="number" id="orders" min="1" max="5"><br>
+          <label for="broth" id="broth" name="broth">Which type of broth would you like?</label>
+         <select id="broth" name="broth">
+                <option disabled selected value="">Pick Your Broth</option>
+                <option value="miso">Miso</option>
+                <option value="shoyu">Shoyu</option>
+                <option value="tonkatsu">Tonkatsu</option>
+                <option value="shio">Shio</option>
+            </select><br>
+        <label for="noodles" name="noodles" id="noodles">Which noodles?</label><br>
+            <input type="radio" name="noodles" value="egg">Egg
+            <input type="radio" name="noodles" value="wheat">Wheat
+            <input type="radio" name="noodles" value="rice">Rice
+            <input type="radio" name="noodles" value="soba">Soba
+            <input type="radio" name="noodles" value="none">No noodles<br>
+        <label for="protein">Which protein/s?</label>
+        <br>
+           <input type="checkbox" name="protein" value="chicken">Chicken
+           <input type="checkbox" name="protein" value="shrimp"> Shrimp
+           <input type="checkbox" name="protein" value="tofu">Tofu
+           <input type="checkbox" name="protein" value="fried egg">Fried egg
+           <input type="checkbox" name="protein" value="beef">Beef
+           <input type="checkbox" name="protein" value="none">None<br>
+        <label for="protein">Which toppings?</label>
+        <br>
+           <input type="checkbox" name="toppings" value="corn">Corn
+           <input type="checkbox" name="toppings" value="gronions">Green onions
+           <input type="checkbox" name="toppings" value="mushrooms">Mushrooms
+           <input type="checkbox" name="toppings" value="sprouts">Bean sprouts
+           <input type="checkbox" name="toppings" value="jalapeno">Sliced jalapenos
+           <input type="checkbox" name="toppings" value="none">No toppings<br>
+        <label for="spicy" name="spicy" id="spicy">How spicy?</label><input type="range" name="spicy" min="0" max="5" step="0.5"><br>
+        <label for="extras" name="extras" id="extras">What else?</label><br><textarea rows="4" cols="30" name="extras">Tell us any special preferences or extras you like</textarea><br>
+        <label for="ice-cream-choice">Ramen comes with ice cream. Which flavor would you like?</label><br>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Green Tea">
+    <option value="Mint">
+    <option value="Mango">
+    <option value="Vanilla">
+    <option value="No ice cream">    
+</datalist><br>
+        <label for="delivery" name="delivery" id="delivery">Delivery or Pickup?</label>
+        <select name="delivery">
+          <option value="small">Delivery +$5</option>
+          <option value="family">Pick-up</option>
+        </select><br>
+        <input type="submit" name="submit-order" value="Submit">
+      </form>
+  </body>
+  </html>

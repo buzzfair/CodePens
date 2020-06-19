@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Form a Story</title>
+  </head>
+  <body>
+    <section id="top">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-html-forms/formAStoryLogo.svg" alt="Form A Story Logo">
+    </section>
+
+    <section id="main">
+      <h1>Complete the Form -<br> Complete the Story!</h1>
+      <hr>
+      <!--Add your form below:-->
+      <form action="story.html" method="GET">
+        <label for="animal-1" name="animal-1">Animal: </label>
+        <input type="text" name="animal-1" required>
+        <br>
+        <label for="animal-2" name="animal-2">Another Animal: </label>
+        <input type="text" name="animal-2" required>
+        <br>
+        <label for="animal-3" name="animal-2">One More Animal: </label>
+        <input type="text" name="animal-3" required>
+        <br>
+        <label for="adj-1" name="adj-1">Adjective (past tense): </label>
+        <input type="text" name="adj-1" placeholder="ex. mystified" required>
+        <br>
+        <label for="verb-1" name="verb-1">Verb (ends in -ing): </label>
+        <input type="text" name="verb-1"
+        placeholder="ex. frolicking" required>
+        <br>
+         <label for="num-1" name="num-1">Number: </label>
+        <input type="number" name="num-1" min="1" max="100" required>
+        <br>
+        <span>Yes or No:</span>
+        <input type="radio" id="yes" name="yes" value="yes" required>
+        <label for="yes" name="yes">Yes</label>
+        <input type="radio" id="no" name="no" value="no">
+        <label for="no" name="no">No</label>
+        <br>
+        <label for="speed" name="speed">Relative speed (ends in -er): </label>
+        <select id="speed" name="speed" required>
+          <option value="" selected></option>
+          <option value="faster">Faster</option>
+          <option value="medium">Medium Speeder</option>
+          <option value="slower">Slower</option>
+          <option value="static">Completely Still-er</option>
+         </select><br>
+      <label for="quote" name="quote">Motivational Quote: </label>
+      <input type="text" placeholder="ex. Winner gets ice cream!" list="quote-choices" name="quote" id="quote" required>
+      <datalist id="quote-choices">
+        <option value="Me. We."></option>
+        <option value="Do or do not. There is no try."></option>
+        <option value="I used to think I was indecisive. Now I'm not sure."></option>
+      </datalist>
+        <br>
+      <label for="message" name="message">Meaningful Message: </label>
+      <textarea rows="8" cols="40" name="message" id="message" minlength="25" required>Add a thoughtful comment</textarea>
+        <br>
+        <br>
+        <input type="submit" value="Form My Story!">
+      </form>
+    </section>
+  </body>
+</html>

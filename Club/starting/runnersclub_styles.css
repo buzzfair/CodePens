@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: lightsalmon;
+	font-family: Montserrat, sans serif;
+}
+
+div {
+	display: block;
+
+}
+
+ul {
+	list-style: none;
+	margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: 0px 0px 0px 40px;
+}
+
+li {
+	font-size: 16px;
+	margin: 0px 16px 8px 0px;
+	padding: 8px 24px;
+	display: inline;
+}
+
+.nav {
+	font-size: 16px;
+	background-color: teal;
+	color: lightsalmon;
+	padding: 8px 0px 0.2px;
+
+}
+
+.nav a {
+	color: lightsalmon;
+	text-decoration: none;
+	padding: 8px 0px 0.2px;
+}
+
+.banner {
+
+}
+
+.intro {
+	height: 30rem;
+	padding-top: 1rem;
+	background-image: url("images/runner/banner.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.intro h1 {
+	color: coral;
+	font-size: 2rem;
+	font-weight: 400;
+	margin-top: 10rem;
+	padding: 2rem;
+	background-color: rgba(0.5, 0.5, 0.5, 0.5);
+	text-align: center;
+}
+
+h3 {
+	display: inline;
+	color: yellow;
+	font-size: 1.75rem;
+	font-weight: 500;
+	padding-bottom: 1rem;
+	margin: 1em;
+}
+
+.about {
+	display: inline;
+	color: white;
+	line-height: 2rem;
+	margin: 1em;
+}
+
+.images {
+	width: 85%;
+	padding: 2rem;
+	margin: 2rem;
+	overflow: hidden;
+}
+
+.images img {
+	padding: 2rem;
+	margin: 2rem;
+	width: 350px;
+	height: auto;
+}
+
+.testimonial {
+	height: 250px;
+	background-color: teal;
+	padding: 30px 20px 40px 16px; 
+}
+
+h2 {
+	display: inline;
+	color: yellow;
+	font-size: 2.5rem;
+	font-weight: 500;
+	padding: 32px 20px 40px 16px; 
+}
+
+h6 {
+	font-size: 1rem;
+	font-weight: 400;
+	color: yellow;
+	padding: 16px 20px 40px 16px; 
+}
+
+.fun {
+	width: 100%;
+	padding: 40px;
+	overflow: hidden;
+	align-content: center;
+}
+
+.fun img {
+	margin: 0 245px;
+	width: 500px;
+	height: auto;
+	padding: 2rem;
+	margin: 2rem;
+
+}
+
+h4 {
+	color: yellow;
+	font-size: 2rem;
+	font-weight: 550;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+@media only screen and (min-width: 480px) {
+	body {
+		widows: 300px;
+	}
+}

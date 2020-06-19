@@ -1,0 +1,53 @@
+import { word } from 'grasshopper.wordList';
+console.log(word);
+function mapString(string, ___) {
+  let map = {
+    ___: ___
+  };
+  for (let i = 0; i < string.length; i++) {
+    ___
+    let letter = string[i];
+    if (map[letter]) {
+      map[letter].push(i);
+    } else {
+      map.letter = [
+        i,
+        ___
+      ];
+    }
+  }
+  return map;
+};
+let stringMap = mapString(word);
+for (let letter in stringMap) {
+  console.log(letter + ': ' + stringMap[letter]);
+}
+
+
+
+My code matches the "correct" code exactly but it won't pass. What's even weirder is that I don't get an error message either. I'm definitely thinking the app (or this project) may be buggy?
+
+    import { word } from 'grasshopper.wordList';
+    console.log(word);
+    function mapString(string, ___) {
+      let map = {
+    ___: ___
+      };
+      for (let i = 0; i < string.length; i++) {
+        ___
+        let letter = string[i];
+        if (map[letter]) {
+          map[letter].push(i);
+        } else {
+          map.letter = [
+            i,
+            ___
+          ];
+        }
+      }
+      return map;
+    };
+    let stringMap = mapString(word);
+    for (let letter in stringMap) {
+      console.log(letter + ': ' + stringMap[letter]);
+    }

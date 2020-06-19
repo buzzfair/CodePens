@@ -1,0 +1,35 @@
+/*
+It’s worth memorizing the entire example below. 
+It represents a very common design pattern used 
+to scale images and videos proportionally.
+
+Note: The example scales the width of an image (or video) 
+to the width of a container. 
+
+If the image is larger than the container, 
+the vertical portion of the image will overflow 
+and will not display. 
+
+To swap this behavior, you can set max-height 
+to 100% and width to auto (essentially swapping the values).
+
+This will scale the height of the media with 
+the height of the container instead. 
+
+If the media is larger than the container, the 
+horizontal portion of the image will overflow 
+and will not display.
+*/
+
+
+.container {
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

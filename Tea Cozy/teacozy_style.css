@@ -1,0 +1,136 @@
+/*For some reason my site has a horizontal scrollbar and I can't get rid of it
+unless I apply an overflow: hidden; rule to the html or body elements which
+then gets rid of the necessary vertical scrollbar. I tried applying the overflow:
+hidden; rule to various elements to see if they were the offenders but I never
+could get the scrollbar to go away*/
+
+html {
+	margin: 0;
+	padding-top: 0;	
+	font-size: 22px;
+
+}
+
+body {
+	font-family: "Helvetica";
+	font-size: 1rem;
+	color: seashell;
+	background-color: black;
+	opacity: 0.9;
+	text-align: center;
+
+}
+
+#top-bar-container {
+	height: 69px;
+	border-bottom: solid 1px seashell;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+
+.logo {
+	height: 50px;
+	padding-left: 10px;
+}
+
+#nav {
+	margin-left: auto;
+}
+
+#nav span {
+	padding: 23px 15px ;
+}
+
+a {
+	text-decoration: underline;
+	color: seashell;
+}
+
+div #mission {
+	display: flex;
+	flex-flow: column wrap;
+
+}
+
+#mission {
+	display: flex;
+	align-items: center;
+	background-image: url("images/tea/img-mission-background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 700px;
+	overflow: hidden;	
+ }
+
+.title-container {
+	background-color: black;
+	width: 100vw;
+	overflow: hidden;
+}
+
+#tea-month {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.images {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 80vw;
+}
+
+.images img {
+	height: 200px;
+	width: 300px;
+	padding: 10px 20px;
+}
+
+
+#location {
+	background-image: url("images/tea/img-locations-background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+	overflow: hidden;
+
+}
+
+#loc-container {
+	display: flex;
+	height: 500px;
+	justify-content: center;
+	overflow: auto;
+	opacity: 1;
+
+}
+
+.loc {
+	width: 300px;
+	height: max-content;
+	line-height: 1.5rem;
+	margin: 15px 40px 0px 40px;
+	z-index: 10;
+	background-color: black;
+}
+
+
+#contact {
+	height: 200px;
+	align-content: center;
+
+}
+
+#copyright {
+	display: flex;
+	justify-content: flex-start;
+	font-size: .8rem;
+}
